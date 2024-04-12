@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credyy</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__head">
+        <div class="container hero__head-container">
+          <span class="hero__logo text">
+            credyy
+          </span>
+          <nav class="nav">
+            <ul class="nav__list list-reset">
+              <li class="nav__item">
+                <a href="#" class="nav__link text">Как получить</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link text">Клиентам</a>
+              </li>
+            </ul>
+          </nav>
+          <button id="hero__btn-auth" class="hero__btn-auth text">Войти</button>
+          <button id="hero__btn-sign" class="hero__btn-sign text">Зарегестрироваться</button>
+        </div>
+      </div>
+      <div class="container hero__container">
+        <h1 class="hero__title text">
+          ОНЛАЙН-ЗАЙМ
+        </h1>
+        <p class="hero__descr text">
+          ПОД ЗАЛОГ недвижимости
+        </p>
+        <div class="hero__calculate-block">
+          <div class="hero__slider">
+            <div class="hero__block">
+              <p class="hero__text text">
+                Сумма займа
+              </p>
+              <output for="hero__range" id="hero__count" class="text">10 000</output>
+              <p class="hero__currency text">₽</p>
+            </div>
+
+            <input type="range" id="hero__range" min="10000" max="100000" value="0" step="1000"
+              oninput="updateRange(value)">
+          </div>
+          <div class="hero__slider">
+            <div class="hero__block">
+              <p class="hero__text text">
+                Срок (месяца)
+              </p>
+              <output for="hero__range" id="hero__month" class="text">3</output>
+            </div>
+
+            <input type="range" id="hero__range" min="3" max="36" value="0" step="3" oninput="updateRangeMonth(value)">
+          </div>
+          <span class="hero__option text">деньги у&nbsp;вас уже через 30&nbsp;минут</span>
+          <button id="hero__btn" class="hero__btn text">Получить деньги</button>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container about__container">
+        <h2 class="about__title text">
+          Как получить деньги?
+        </h2>
+        <p class="about__descr text">
+          Принимаются в&nbsp;залог: квартиры, комнаты, дачи, земельные участки, коммерческая недвижимость, а&nbsp;также
+          доли при долевом участие в&nbsp;строительстве. Деньги под залог недвижимости выдаются в&nbsp;сумме до&nbsp;60%
+          от&nbsp;стоимости вашего имущества. Срок займа составляет до&nbsp;3-х лет, с&nbsp;возможностью продления
+          договора.
+        </p>
+        <div class="about__block">
+          <div class="about__cart">
+            <h3 class="about__subtitle">
+              Зарегистрируйтесь на&nbsp;сайте и&nbsp;подайте заявку
+            </h3>
+            <form action="#" class="about__form">
+              <input type="number" class="about__input" placeholder="+7 (000) 000 00-00">
+              <input type="text" class="about__input" placeholder="Код с&nbsp;телефона">
+            </form>
+          </div>
+          <div class="about__cart">
+            <h3 class="about__subtitle-size">
+              Подготовьте ваши документы
+            </h3>
+            <p class="about__text">
+              Специалисты изучат вашу ситуацию и&nbsp;проверят документы
+            </p>
+            <button id="about__btn" class="about__btn text">
+              Заполнить форму
+            </button>
+            <svg class="about__svg" width="81" height="104" viewBox="0 0 90 116" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M87 44.25H59C51.2678 44.25 45 38.0939 45 30.5V3M24 92.375H66M24 71.75H45M87 43.0705V99.25C87 106.844 80.7322 113 73 113H17C9.26801 113 3 106.844 3 99.25V16.75C3 9.15608 9.26801 3 17 3H46.2012C49.914 3 53.4749 4.44863 56.1006 7.02731L82.8994 33.3477C85.5251 35.9264 87 39.4237 87 43.0705Z"
+                stroke="#363636" stroke-width="6" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="about__cart">
+            <h3 class="about__subtitle">
+              Подпишите онлайн договор и&nbsp;получите деньги
+            </h3>
+            <div class="about__radio_btn">
+              <input id="radio-1" type="radio" name="radio" value="1">
+              <label for="radio-1">Банковская карта</label>
+            </div>
+            <div class="about__radio_btn">
+              <input id="radio-2" type="radio" name="radio" value="2" checked>
+              <label for="radio-2">Система быстрых платежей</label>
+            </div>
+          </div>
+
+        </div>
+        <div class="about__block-descr">
+          <div class="about__line"></div>
+          <p class="about__descr text descr-width">
+            Мы&nbsp;избавим Вас от&nbsp;бумажной волокиты и&nbsp;времени ожидания в&nbsp;очередях&nbsp;&mdash; займы под
+            залог
+            недвижимости оформляются быстро, без лишних справок и&nbsp;по&nbsp;честной прозрачной ставке! Плохая
+            кредитная история
+            не&nbsp;станет поводом для отказа. Недвижимость остаётся в&nbsp;собственности и&nbsp;владении.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container advantages__container">
+        <div class="advantages__block">
+          <div class="advantages__block1">
+            <h2 class="advantages__title text">
+              Почему именно мы?
+            </h2>
+            <div class="advantages__content">
+              <div class="advantages__card">
+                <h3 class="advantages__subtitle text">Без смены собственника</h3>
+                <p class="advantages__descr">Жилье остается у&nbsp;владельца&nbsp;&mdash; не&nbsp;требуется
+                  переоформлять недвижимость на&nbsp;банк и&nbsp;аннулировать регистрацию</p>
+              </div>
+              <div class="advantages__card">
+                <h3 class="advantages__subtitle text">30 минут на выдачу займа</h3>
+                <p class="advantages__descr">Быстро примем решение по вашей заявке</p>
+              </div>
+              <div class="advantages__card">
+                <h3 class="advantages__subtitle text">Без визита в офис</h3>
+                <p class="advantages__descr">Оформляем займ и зачисляем деньги онлайн</p>
+              </div>
+              <div class="advantages__card">
+                <h3 class="advantages__subtitle text">Можно погасить досрочно</h3>
+                <p class="advantages__descr">Без комиссий и штрафов</p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__block2">
+            <button id="advantages__btn" class="advantages__btn text">Заказать звонок</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container clients__container">
+        <h2 class="clients__title text">
+          Уже помогли 9 250 клиентам
+        </h2>
+        <ul class="clients__list list-reset">
+          <li class="clients__item img1">
+            <p class="clients__text text">
+              Обращалась за займом под залог дома. Сотрудники компании очень внимательные и компетентные. Все объяснили
+              подробно и
+              помогли оформить документы. Спасибо за вашу помощь!
+            </p>
+          </li>
+          <li class="clients__item img2">
+            <p class="clients__text text">
+              Мне срочно нужны были деньги на лечение. В этой компании мне одобрили заем под залог квартиры всего за
+              один день. Очень
+              выручили в трудной ситуации.
+            </p>
+          </li>
+          <li class="clients__item img3">
+            <p class="clients__text text">
+              Мне срочно понадобились деньги на ремонт машины. Обратился в эту компанию, и мне быстро одобрили заем под
+              залог
+              квартиры. Процентная ставка приемлемая, а условия договора прозрачные. Рекомендую!
+            </p>
+          </li>
+          <li class="clients__item img4">
+            <p class="clients__text text">
+              Брала здесь заем на покупку новой квартиры. Условия оказались выгоднее, чем в других компаниях. Оформление
+              прошло быстро
+              и без лишней бюрократии.
+            </p>
+          </li>
+          <li class="clients__item img5">
+            <p class="clients__text text">
+              Брал здесь заем на развитие бизнеса. Оценили недвижимость оперативно, деньги получил на следующий день.
+              Удобный график
+              платежей и вежливое обслуживание.
+            </p>
+          </li>
+          <li class="clients__item img6">
+            <p class="clients__text text">
+              Обращалась в эту компанию дважды. Оба раза получила займы быстро и без проблем. Рекомендую всем, кому
+              срочно нужны
+              деньги.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container questions__container">
+        <h2 class="questions__title text">
+          часто задаваемые вопросы
+        </h2>
+        <ul class="questions__list">
+          <li class="questions__item">
+            <p class="questions__text text">
+              Реально ли взять кредит под залог, если недвижимость уже заложена?
+            </p>
+          </li>
+          <li class="questions__item text">
+            <p class="questions__text text">
+              Какие документы нужны для получения кредита?
+            </p>
+          </li>
+          <li class="questions__item text">
+            <p class="questions__text text">
+              Какая форма договора используется при залоговом кредитовании?
+            </p>
+          </li>
+          <li class="questions__item text">
+            <p class="questions__text text">
+              Каковы сроки кредитования под залог?
+            </p>
+          </li>
+        </ul>
+        <div class="questions__footer">
+          <h3 class="questions__subtitle text">
+            Получить займ прямо сейчас!
+          </h3>
+          <button id="questions__btn" class="questions__btn">Оформить заявку</button>
+          <p class="questions__descr">реализуйте свои планы</p>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+  </main>
+
+</body>
+
+</html>
