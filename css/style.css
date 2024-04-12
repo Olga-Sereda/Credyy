@@ -509,7 +509,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 487px;
-    background-image: url(/img/advantages.png);
+    background-image: url(../img/advantages.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -579,27 +579,27 @@ body {
 }
 
 .img1 {
-    background-image: url(/img/clients1.png);
+    background-image: url(../img/clients1.png);
 }
 
 .img2 {
-    background-image: url(/img/clients2.png);
+    background-image: url(../img/clients2.png);
 }
 
 .img3 {
-    background-image: url(/img/clients3.png);
+    background-image: url(../img/clients3.png);
 }
 
 .img4 {
-    background-image: url(/img/clients4.png);
+    background-image: url(../img/clients4.png);
 }
 
 .img5 {
-    background-image: url(/img/clients5.png);
+    background-image: url(../img/clients5.png);
 }
 
 .img6 {
-    background-image: url(/img/clients6.png);
+    background-image: url(../img/clients6.png);
 }
 
 /* questions */
